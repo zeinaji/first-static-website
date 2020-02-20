@@ -11,6 +11,7 @@ header {
 body {
     padding: 0;
     margin: 0;
+    height: 100vh;
 }
 
 li {
@@ -40,8 +41,154 @@ a{
 }
 
 h1 {
-    font-family: cursive;
+    font-family: "Comic Sans MS";
     text-align: center;
-    text-decoration-color: linear-gradient(90deg, #ff8a00, #e52e71);
-    font-size: 40px;
+    background: -webkit-linear-gradient( #ff8a00, #e52e71);
+    font-size: 50px;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-top: 10px
+}
+
+h2 {
+    font-family: "Comic Sans MS";
+    margin-left: 120px;
+    margin-top: 10px;
+    margin-bottom: 12px;
+    color: hsl(0, 3%, 40%);
+
+}
+
+p {
+    font-family: "Comic Sans MS";
+    margin-left: 120px;
+    margin-top:0;
+    color: hsl(0, 3%, 30%);
+    
+}
+
+h3 {
+    margin-left: 120px;
+    margin-top: 40px;
+    font-family: "Comic Sans MS";
+    color: hsl(0, 3%, 40%);
+    margin-bottom: -10px;
+}
+
+.likes {
+    font-family: "Comic Sans MS";
+    margin-left: 80px;
+}
+
+.fa-cheese {
+    color: #FFCC33;
+}
+
+.food {
+    border-top: 1px solid #FFCC33;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.fa-film {
+    color: hsl(0, 56%, 34%);
+}
+
+.netflix { 
+    border-top: 1px solid hsl(0, 56%, 34%);
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.likes {
+    color: hsl(0, 3%, 30%);
+    width: 250px;
+}
+
+.fa-music {
+    color: #33CCCC;
+}
+
+.music {
+    border-top: 1px solid #33CCCC;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.fa-umbrella-beach {
+    color: #0099FF;
+}
+
+.holidays {
+    border-top: 1px solid #0099FF;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+.fa-ice-cream {
+    color: #FF0066;
+}
+
+.watermelon {
+    border-top: 1px solid #FF0066;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+footer {
+    background: #18F2B2;
+    height: 50px;
+    width: 100vw;
+    margin-top: 65px;
+    
+}
+
+img {
+    width: 475px;
+    height: 310px;
+    float: right;
+    margin-right: 120px;
+    border-radius: 10%;
+}
+
+hr {
+    text-align: center;
+    width: 500px;
+    margin-top: 75px;
+}
+
+h4 {
+    text-align: center;
+    font-family: "Comic Sans MS";
+    color: hsl(0, 3%, 40%);
+}
+
+.message { 
+    text-align: center;
+    height: 200px;
+    
+}
+
+textarea {
+    border-radius: 10%;
+    border: 1px solid hsl(0, 4%, 43%);
+}
+
+button {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    font-family: "Comic Sans MS";
+    border: 1px solid hsl(0, 4%, 43%);
+    color: hsl(0, 4%, 43%);
+    border-radius: 10%;
+}
+
+.sr-only {
+    position: absolute;
+    left: -10000px;
+    width: 1px;
+    height: 1px;
+    top: auto;
+    overflow: hidden;
 }
