@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://kit.fontawesome.com/9c6442febb.js" crossorigin="anonymous"></script>
+
+    <title>Contact me</title>
+</head>
+<body>
+   <div class = "wrapper_header">
+    <header>
+        <nav>
+        <div class = "media">
+        <ul class="social-media">
+            <li class="gadgets"><a href="https://www.instagram.com/zein_aji/"><i class="fab fa-instagram"></i></a></li>
+            <li class="gadgets"><a href="https://twitter.com/zein_aji97"><i class="fab fa-twitter"></i></a></li>
+            <li class="gadgets"><a href="https://www.facebook.com/zein.aji.7"><i class="fab fa-facebook-f"></i></a></li>
+            <li class="gadgets"><a href="https://www.linkedin.com/in/zein-aji-9625b816b/"><i class="fab fa-linkedin-in"></i></a></li>
+        </ul>
+        </div>
+        <div class = "pages">
+            <ul class = "nav">
+                <li class = "nav_button">
+                    <a href = "index.html">Home</a>
+                </li>
+                <div class = "wrapper_nav">
+                <li class = "nav_button">
+                    <a href = "about.html">About</a>
+                </li>
+                </div>
+                <li class = "nav_button"> 
+                    <a href = "contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+        </nav> 
+    </header>
+    </div>
+    <main class = "contact">
+        <div class = "flex-container">
+        <div class = "flex-item1">
+        <div class = "para-con">
+            <h2>Have you got any questions?</h2>
+            <p class = "message-me">Please don't hesitate to leave a message</p>
+        </div>
+            <div class = "pic-con"> 
+            <img src = "letter.png" alt = "message">
+           </div>
+        </div>
+           <div class="message">
+            <form>
+                <div class="wrapper">
+                <label class = "sr-only">First Name</label>
+                <input type = "text" placeholder = "First Name" id = "first_name" name = "first_name"> 
+                </div>
+                <div class = "wrapper">
+                <label class = "sr-only">Second Name</label>
+                <input type = "text" placeholder = "Second Name" id = "second_name">
+                </div>
+                <div class = "wrapper">
+                <label class = "sr-only">Email</label>
+                <input type = "text" placeholder = "Email" id = "email">
+                </div>
+                <div class="wrapper_textarea wrapper">
+                <label for="message1" class="sr-only">Leave me a message</label>
+                <textarea id="message1" rows="9" cols="30" placeholder="Your questions..."></textarea>
+                </div>
+                <div class="wrapper_button wrapper">
+                <button type="submit" id = "click" class = "submit">Submit</button>
+                </div>
+                <div class="wrapper_button wrapper">
+                <button type="reset" id="clear" class="clear">Clear</button>
+                </div>
+            </form>
+            </div>
+            </div>
+        <footer>
+            <div class = "media-footer">
+                <ul class="social-media">
+                    <li class="gadgets"><i class="fab fa-instagram"></i></li>
+                    <li class="gadgets"><i class="fab fa-twitter"></i></li>
+                    <li class="gadgets"><a href="https://www.facebook.com/zein.aji.7"><i class="fab fa-facebook-f"></i></a></li>
+                    <li class="gadgets"><i class="fab fa-linkedin-in"></i></li>
+                </ul>
+                </div>
+        </footer>
+    </main>
+
+    <script>
+        const firstName = document.getElementById("first_name");
+    const secondName = document.getElementById("second_name");
+    const email = document.getElementById("email");
+    const message = document.getElementById("message1");
+    let respondClick = () => {
+        window.alert("First Name: " + firstName.value + "\r\n" +
+                     "Second Name: " + secondName.value + "\r\n" +
+                     "Email: " + email.value + "\r\n" + 
+                     "Message: " + message.value + "\r\n")
+    };
+    const click = document.getElementById("click");
+    click.addEventListener("click", respondClick);
+
+    </script>
+   
+</body>
+</html>
